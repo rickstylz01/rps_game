@@ -1,0 +1,11 @@
+<h1>Choose your weapon!</h1>
+
+<%= form_with scope: :article, local: true do |form| %>
+ <%= check_box_tag(:choose_rock) %>
+ <%= label_tag(:choose_rock, "Rock") %>
+ <%= check_box_tag(:choose_paper) %>
+ <%= label_tag(:choose_paper, "Paper") %>
+ <%= check_box_tag(:choose_scissors) %>
+ <%= label_tag(:choose_scissors, "Scissors") %>
+
+<% end %>

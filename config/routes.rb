@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  get 'rps_game/choose'
   resources :articles
 
   root 'welcome#index'
